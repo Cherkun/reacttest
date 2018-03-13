@@ -1,0 +1,9 @@
+$border-color: #ABAAAA;
+
+:local(.addFriendInput) {
+  border-radius: 0;
+  border-color: $border-color;
+  border-left: 0;
+  border-right: 0;
+}
+
