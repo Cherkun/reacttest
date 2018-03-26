@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import styles from './AddFriendInput.scss'
+import styles from './Inputs.scss'
 import PropTypes from 'prop-types'
 
 class SearchFriendInput extends Component {
@@ -24,7 +24,7 @@ class SearchFriendInput extends Component {
     this.handleChange=this.handleChange.bind(this)
   }
 
-  handleChange (e) {
+  handleChange(e){
     this.setState({ name: e.target.value });
     this.props.searchFriend(e.target.value);
   }

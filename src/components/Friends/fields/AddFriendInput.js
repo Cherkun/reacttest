@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import styles from './AddFriendInput.scss'
+import styles from './Inputs.scss'
 import PropTypes from 'prop-types'
 
 class AddFriendInput extends Component {
@@ -31,13 +31,14 @@ class AddFriendInput extends Component {
   handleSubmit (e) {
     const name = e.target.value.trim();
     if (e.which === 13 && name!=='') {
-      this.props.addFriend(name);
+      this.props.addFriend(name,this.props.filter);
       this.setState({ name: '' });
     }
   }
 
 }
 AddFriendInput.propTypes = {
-    addFriend: PropTypes.func.isRequired
+    addFriend: PropTypes.func.isRequired,
+    filter: PropTypes.string.isRequired
 }
 export default AddFriendInput

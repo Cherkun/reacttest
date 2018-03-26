@@ -6,4 +6,11 @@ $border-color: #ABAAAA;
   border-left: 0;
   border-right: 0;
 }
+:local(.countInput) {
+  border-radius: 0;
+  border-color: $border-color;
+  border-left: 0;
+  border-right: 0;
+  width:30px;
+ }
 

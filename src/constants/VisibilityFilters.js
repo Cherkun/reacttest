@@ -1,0 +1,5 @@
+export const ALL = 'all'
+export const FRIENDS = 'friends'
+export const WORK = 'work'
+export const STUDY = 'study'
+export const STARRED = 'starred'
